@@ -1,10 +1,11 @@
 #!/bin/bash
 echo -e "\033[32m 正在执行 \033[0m"
-sudo iptables -P INPUT ACCEPT
-sudo iptables -P FORWARD ACCEPT
-sudo iptables -P OUTPUT ACCEPT
-sudo iptables -F
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -F
+iptables-save
 sudo apt-get purge netfilter-persistent -y
-echo -e "\033[32m 5秒后重启 \033[0m"
-sleep 5s
-reboot
+netfilter-persistent save
+netfilter-persistent reload
+echo -e "\033[32m 完成 \033[0m"
