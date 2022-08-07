@@ -5,7 +5,7 @@ iptables -P FORWARD ACCEPT
 iptables -P OUTPUT ACCEPT
 iptables -F
 iptables-save
-sudo apt-get purge netfilter-persistent -y
+sudo apt-get install iptables-persistent -y
 netfilter-persistent save
 netfilter-persistent reload
 echo -e "\033[32m 完成 \033[0m"
