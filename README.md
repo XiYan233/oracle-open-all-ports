@@ -1,6 +1,6 @@
 ## Oracle Cloud 开放所有端口
 ```shell
-wget https://raw.githubusercontent.com/Demontisa/oracle-open-all-ports/main/oracle_open_all_ports.sh
+wget https://raw.githubusercontent.com/XiYan233/oracle-open-all-ports/main/oracle_open_all_ports.sh
 bash oracle_open_all_ports.sh
 ```
 
